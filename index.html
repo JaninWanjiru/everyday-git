@@ -35,13 +35,12 @@
      <p><>To use Git, we need to first download and install it.</p>
      <p><>To download Git, <a href="https://git-scm.com/downloads">Visit Git</a> and download the version for your platform whether it is macOS or Windows or Linux.</p>
      <p><>Run the downloaded installer, leave all the default options during installation.</p>
-     <p><><strong>To confirm whether Git was installed successfully:</strong>
+     <p><><strong>To confirm whether Git was installed successfully:</strong></p>
         <ul>
             <li>Open command prompt in windows or terminal in mac/linux.</li>
             <li>Run the command: <mark>git --version</mark></li>
             <li>If a version number is returned, Git is installed on your system. If you receive any other output, Git is not installed.</li>
         </ul>
-    </p>
      
      <figure>        
             <img src="./images/git version.png" alt="git version image">
@@ -53,24 +52,22 @@
      <p><>Now that Git is installed, it's time to configure basic information.</p>
      <p><>We don't need to 'register an account' to use Git, however, we need to tell Git who we are. By providing our username and email address.</p>
 
-     <p><Strong>Configuring your username:</Strong>
+     <p><Strong>Configuring your username:</Strong></p>
         <ul>
             <li>Open command prompt or terminal depending on your platform.</li>
             <li>Run the command: <mark>git config --global user.name "USERNAME"</mark></p>[Replace USERNAME with your preferred username, for example, if your username is JaninWanjiru- you'll write: <em><strong>git config --global user.name "JaninWanjiru"</em></strong>]</li>
         </ul>
-    </p>
      
      <figure>
         <img src="./images/username.png" alt="Username Configuring">
         <figcaption>Configuring Username and Verifying the Configuration</figcaption>
      </figure>
 
-     <p><Strong>Configuring your email address:</Strong>
+     <p><Strong>Configuring your email address:</Strong></p>
         <ul>
             <li>Open command prompt or terminal depending on your platform.</li>
             <li>Run the command: <mark>git config --global user.email "EMAIL_ADDRESS"</mark></p> [Replace EMAIL_ADDRESS with your email address, for example, if your email address is janinndongo02@gmail.com- you'll write: <em><strong>git config --global user.email "janinndongo02@gmail.com"</strong></em>]</li>
         </ul>
-    </p>
     
     <figure>
         <img src="./images/useremail.png" alt="Useremail Configuration">
@@ -83,12 +80,11 @@
      <p><>A git repo is a workspace which tracks and manages files within a folder.</p>
      <p><>Anytime we want to use Git with a project, app, et.c, we need to create a new git repository.</p>
      <p><>We can have as many repos as we want on our machine all with separate history and content, however, it is important to note that a project should have a single Git repository.</p>
-     <p><strong>To initialize a git repository:</strong>
+     <p><strong>To initialize a git repository:</strong></p>
         <ul>
             <li>Open the terminal or command prompt in your project directory, you can also open your command line tool and navigate to your project directory.</li>
             <li>Run the command: <mark>git init</mark></li>
         </ul>
-    </p>
     
      <p><b>NOTE:</b> Initializing a git repository is something you do once per project. Running the command <i><strong>git init</strong></i> in a project that contains a git repository will make git initialize a repository within a repository.</p>
      <p><b>Tip:</b> use <i><strong>git status</strong></i> to confirm whether your project has a git repository or not.</p>
@@ -102,12 +98,11 @@
      <!-- Explains the steps of adding files to the staging area -->
       <h2>6. Adding files to the staging area</h2>
       <p><>In Git, the <i><strong>staging area</strong></i> also known as the <i>index</i> is an intermediate space where you can organize changes before committing them to the repository.</p>
-      <p><>When you make changes to files in your working directory, you need to add these changes to the staging area using the <i><strong>git add</strong></i> command.
+      <p><>When you make changes to files in your working directory, you need to add these changes to the staging area using the <i><strong>git add</strong></i> command.</p>
         <ul>
             <li>To add changes, run the command <mark>git add .</mark> to add all the files in one go.</li>
             <li>Or the command <i><b>git add FILE_NAME</b></i> to add a single file.</li>
         </ul>
-     </p>
       
       <figure>
         <img src="./images/Add.png" alt="Adding Files">
@@ -117,33 +112,30 @@
       <h3><i><u>Tracked vs Untracked Files</u></i></h3>
       <p><>When you use Git, your files fall into two main categories: tracked and untracked. Understanding the difference helps you know what Git is actually monitoring.</p>
       <p><b>Untracked Files</b></p>
-      <p><>These are files that Git sees in your working directory but hasn't been told to track yet. They:
+      <p><>These are files that Git sees in your working directory but hasn't been told to track yet. They:</p>
         <ul>
             <li>Haven't been added using git add</li>
             <li>Won't be included in commits until you explicitly track them.</li>
         </ul>
-      </p>
       
       <figure>
         <img src="./images/untracked.png" alt="Untracked files" height="160px">
         <figcaption>Using <i><strong>git status</strong></i> command to view Untracked files.</figcaption>
       </figure>
       <p><b>Tracked Files</b></p>
-      <p><>These are files that Git already knows about. They were either:
+      <p><>These are files that Git already knows about. They were either:</p>
         <ul>
             <li>part of the initial commit</li>
             <li>staged using git add</li>
             <li>or committed before.</li>
         </ul>
-      </p>
       
-      <p>Tracked files can be in one of three states:
+      <p>Tracked files can be in one of three states:</p>
         <ul>
             <li><b>Unmodified:</b> Nothing has changed since the last commit.</li>
             <li><b>Modified:</b> The file has been changed but not yet staged.</li>
             <li><b>Staged:</b> The file is marked to be included in the next commit.</li>
         </ul>
-      </p>
       
       <figure>
         <img src="./images/tracked.png" alt="Tracked files" height="160px">
@@ -155,14 +147,14 @@
        <p><>A commit in git is a checkpoint in time, it is a snapshot of changes in your repository.</p>
        <p><>The commit process involves recording snapshots of your project at various stages, allowing you to track progress, revert changes and collaborate with others efficiently.</p>
        <p><>Committing will only work if there are changes in the staging area.</p>
-       <p>Key components of a commit:
+       <p>Key components of a commit:</p>
         <ul>
             <li><b>A hash:</b> a unique identifier for each commit.</li>
             <li><b>Commit message:</b> a descriptive message that explains the purpose of the commit.</li>
             <li><b>Author:</b> the person who made the commit.</li>
             <li><b>Timestamp:</b> the date and time when the commit was made.</li>
         </ul>
-       </p>
+       
        <p><>To commit, we use the <i><strong>git commit</strong></i> command.</p>
        <p><>There is a <mark>-m</mark> flag that allows us to pass a commit message directly without having to open a text editor.</p>
        <p><><mark>git commit -m "MESSAGE"</mark>, Replace MESSAGE with a short descriptive commit message of your choosing.</p>
@@ -192,13 +184,13 @@
         <h2>8. Branches</h2>
         <p><>A <strong>branch</strong> in Git is like a separate line of development that allows you to work on different versions of a project independently.</p>
         <p><>Think of it as a workspace where you can make changes, test new features, or fix bugs without affecting the main version of your code.</p>
-        <p>Importance of Branches:
+        <p>Importance of Branches:</p>
             <ul>
                 <li><strong>Safe experimentation:</strong> You can try out new ideas without breaking the main codebase.</li>
                 <li><strong>Parallel development:</strong> Multiple team members can work on different features simultaneously.</li>
                 <li><strong>Better organization:</strong> You can manage tasks or features branches before combining them.</li>
             </ul>
-        </p>
+        
         <p><i><u><b>The master branch</b></u></i></p>
         <p><>This is the default git branch.</p>
         <p><>It doesn't do anything special or have any fancy powers, it's just like any other branches.</p>
@@ -232,47 +224,70 @@
            <p><>To switch branches, we use the command: <mark>git switch BRANCH_NAME</mark></p>
            <p><>Replace BRANCH_NAME with the name of the branch, for example, if we want to make production the active branch (switching to it): <i><b>git switch production</b></i></p>
            <figure>
-            <img src="./images/branch switch.png" alt="Switching to a differnt branch ">
+            <img src="./images/branch switch.png" alt="Switching to a differnt branch " height="160px">
             <figcaption>Switching to a banch named production using <i><strong>git switch production</strong></i> command and confirming using <i><strong>git branch</strong></i> command.</figcaption>
            </figure>
 
            <!-- Explains how to merge a branch -->
             <h2>12. Merging a branch</h2>
             <p><>Almost all the times, we want to incorporate things we've done in our branch/branches into another branch (destination branch).</p>
-            <p><>To merge branches:
+            <p><>To merge branches:</p>
                 <ul>
                     <li>First, we switch to the branch where we want to merge the current branch.</li>
                     <li>Then we use the command: <mark>git merge BRANCH_NAME</mark></li>
                     *where BRANCH_NAME is the name of the branch we want to merge to the current active branch.
                 </ul>
-            </p>
-            <p><>Assuming our official branch is called 'master' and we have content in a branch called 'production' that we want to merge into master:
+            
+            <p><>Assuming our official branch is called 'master' and we have content in a branch called 'production' that we want to merge into master:</p>
                 <ul>
                     <li>We start by switching to the master branch where we want to merge the changes from 'production': <i><strong>git switch master</strong></i></li>
                     <li>We then use the <i><strong>git merge</strong></i> to merge the content from production to master: <i><strong>git merge production</strong></i></li>
                 </ul>
-            </p>
+            <figure>
+                <img src="./images/branch merging.png" alt="merging a branch" height="160px">
+                <figcaption>Merging a branch using the <i><strong>git merge BRANCH_NAME</strong></i> <command>.</figcaption>
+            </figure>
+
             <h3><i><u>Merge conflicts</u></i></h3>
             <p><>Merge conflicts occur when, during merging, git is unable to reconcile differences between two branches.</p>
-            <p>When Merge Conflicts occur:
+            <p><>When Merge Conflicts occur:</p>
                 <ul>
                     <li><strong>Concurrent changes</strong> - if two branches have changes to the same lines of a file, Git can't decide which change to keep.</li>
                     <li><strong>Conflicting edits</strong> - if one branch edits a file that the other branch deletes, Git can't automatically resolve the conflict.</li>
                     <li><strong>Diverged Histories</strong> - if the histories of the branches have diverged significantly, merge conflicts are more likely to occur.</li>
                 </ul>
-            </p>
+            
             <h3><i><u>How to fix merge conflicts</u></i></h3>
-            <p>
                 <ul>
                     <li>Open up the file(s) with merge conflicts.</li>
                     <li>Edit the file(s) to remove the conflicts. Decide which branch's content you want to keep in each conflict or keep the content from both.</li>
                     <li>Remove the conflict markers in the document.</li>
                     <li>Add your changes and then make a commit.</li>
                 </ul>
-            </p>
 
-
-
+            <!-- Explains how to delete a branch -->
+             <h2>13. Deleting a branch</h2>
+             <p><>After working on branches and merging the changes to the main branch, usually we don't need that branch anymore, and it is safe to delete it.</p>
+             <p><>To delete a branch, we use the git branch command and pass the -d flag: <mark>git branch -d BRANCH_NAME</mark></p>
+             <p><>Using -d flag to delete a branch that has not been merged might give us an error, if are sure we want to delete the branch, we can force git to delete it by passing -D flag to the git branch command: <mark>git branch -D BRANCH_NAME</mark></p>
+             <p><strong>Note:</strong> You cannot be in the same branch that you want to delete, you have to be in a different branch.</p>
+             <figure>
+                <img src="./images/branch deletion.png" alt="deleting a branch" height="120px">
+                <figcaption>Deleting a branch using the <i><strong>git branch -d BRANCH_NAME</strong></i> command.</figcaption>
+             </figure>
+            
+             <!-- Next Steps -->
+              <h2>14. Next Steps</h2>
+              <p><>Congratulations on making it this far! You've learned the essentials of Git — from initializing a repository to working with branches and commits. Here are some great next steps to continue your Git journey:</p>
+              <ul>
+                <li><strong>Learn GitHub:</strong> GitHub is a cloud-based platform where you can host your Git repositories, collaborate with others, and manage your projects.</li>
+                <li><strong>Explore Pull Requests:</strong> Learn how teams collaborate on GitHub using pull requests and code reviews.</li>
+                <li><strong>Get comfortable with Git Merge Conflicts:</strong> Understand how to resolve conflicts when merging branches.</li>
+                <li><strong>Try Git Rebase:</strong> A powerful tool to rewrite history and clean up your commit history.</li>
+                <li><strong>Use Git with VS Code:</strong> Integrate Git with Visual Studio Code to manage your repositories visually.</li>
+                <li><strong>Experiment with Git Workflows:</strong> Learn about Gitflow and other branching strategies used in team environments.</li>
+              </ul>
+              <p><>Each of these topics will help you become more confident and efficient when working with Git and in collaborative development environments.</p>
 
 </body>
 </html>

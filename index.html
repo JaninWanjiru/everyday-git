@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everyday Git</title>
-    <link rel="Icon" href="./Git.jpg">
+    <link rel="Icon" href="./images/Git.jpg">
 </head>
 <body>
 
     <h1>Everyday Git</h1>
     <p>A beginner-friendly guide to using Git.</p>
 
-    <!-- Step 1 -->
+    <!-- Main tile and blog intro -->
     <h2>1. Get Started</h2>
     <p><>Set up your development environment and create all the necessary files and folders.</p>
     <p><>To start writing HTML, all you need is a code editor (Visual Studio- Recommended) and a web browser (Microsoft Edge or Google Chrome).</p>
 
-    <!-- Step 2 -->
+    <!-- Explains what Git is -->
     <h2>2. What is Git?</h2>
     <p><>Git is a <i><strong>Version Control System (VCS).</strong></i></p>
     <p><>A version control system is a software that tracks and manages changes to files over time.</p>
@@ -30,7 +30,7 @@
     <p><>It allows developers to host, review, and manage code, track changes, and collaborate with others on projects.</p>
     <p><>GitHub is built around Git, making it easier for teams to work together and maintain a history of their codebase.</p>
 
-    <!-- Step 3 -->
+    <!-- Explains the steps of installing git -->
      <h2>3. Installing Git</h2>
      <p><>To use Git, we need to first download and install it.</p>
      <p><>To download Git, <a href="https://git-scm.com/downloads">Visit Git</a> and download the version for your platform whether it is macOS or Windows or Linux.</p>
@@ -44,11 +44,11 @@
     </p>
      
      <figure>        
-            <img src="./git version.png" alt="git version image">
+            <img src="./images/git version.png" alt="git version image">
             <figcaption>Confirming whether Git was installed by checking the version number</figcaption>
     </figure>
 
-    <!-- Step 4 -->
+    <!-- Explains how to configure git -->
      <h2>4. Configuring Git</h2>
      <p><>Now that Git is installed, it's time to configure basic information.</p>
      <p><>We don't need to 'register an account' to use Git, however, we need to tell Git who we are. By providing our username and email address.</p>
@@ -61,7 +61,7 @@
     </p>
      
      <figure>
-        <img src="./username.png" alt="Username Configuring">
+        <img src="./images/username.png" alt="Username Configuring">
         <figcaption>Configuring Username and Verifying the Configuration</figcaption>
      </figure>
 
@@ -73,11 +73,11 @@
     </p>
     
     <figure>
-        <img src="./useremail.png" alt="Useremail Configuration">
+        <img src="./images/useremail.png" alt="Useremail Configuration">
         <figcaption>Configuring Useremail and Verifying the Configuration</figcaption>
     </figure>
 
-    <!-- Step 5 -->
+    <!-- Explains the steps of initializing a git repo -->
      <h2>5. Intializing a Git repository</h2>
      <h3><i><u>What is a Git Repository</u></i></h3>
      <p><>A git repo is a workspace which tracks and manages files within a folder.</p>
@@ -95,11 +95,11 @@
      <p><>When you run the git status command and get the message "fatal: not a git repository..." being returned, then it means that the project does not have a git repository, you can go ahead and initialize one.</p>
      <p><>If you get anything else back, then it means that the current directory contains a git repository, therefore no need to initialize one again.</p>
      <figure>
-        <img src="./Initializing.png" alt="Initializing git repo">
-        <figcaption>Initializing a Git Repository</figcaption>
+        <img src="./images/Initializing.png" alt="Initializing git repo">
+        <figcaption>Initializing a Git Repository using <i><strong>git init</strong></i> command.</figcaption>
      </figure>
 
-     <!-- Step 6 -->
+     <!-- Explains the steps of adding files to the staging area -->
       <h2>6. Adding files to the staging area</h2>
       <p><>In Git, the <i><strong>staging area</strong></i> also known as the <i>index</i> is an intermediate space where you can organize changes before committing them to the repository.</p>
       <p><>When you make changes to files in your working directory, you need to add these changes to the staging area using the <i><strong>git add</strong></i> command.
@@ -110,7 +110,7 @@
      </p>
       
       <figure>
-        <img src="./Add.png" alt="Adding Files">
+        <img src="./images/Add.png" alt="Adding Files">
         <figcaption>Using <b><i>git add .</i></b> command to add all files to the staging area.</figcaption>
       </figure>
 
@@ -125,8 +125,8 @@
       </p>
       
       <figure>
-        <img src="./untracked.png" alt="Untracked files" height="160px">
-        <figcaption>Using <i>git status</i> to view Untracked files.</figcaption>
+        <img src="./images/untracked.png" alt="Untracked files" height="160px">
+        <figcaption>Using <i><strong>git status</strong></i> command to view Untracked files.</figcaption>
       </figure>
       <p><b>Tracked Files</b></p>
       <p><>These are files that Git already knows about. They were either:
@@ -146,11 +146,11 @@
       </p>
       
       <figure>
-        <img src="./tracked.png" alt="Tracked files" height="160px">
-        <figcaption>Using <i>git status</i> to view Tracked files.</figcaption>
+        <img src="./images/tracked.png" alt="Tracked files" height="160px">
+        <figcaption>Using <i><strong>git status</strong></i> command to view Tracked files.</figcaption>
       </figure>
 
-      <!-- Step 7 -->
+      <!-- Explains the steps of commiting changes -->
        <h2>7. Commiting changes</h2>
        <p><>A commit in git is a checkpoint in time, it is a snapshot of changes in your repository.</p>
        <p><>The commit process involves recording snapshots of your project at various stages, allowing you to track progress, revert changes and collaborate with others efficiently.</p>
@@ -166,6 +166,79 @@
        <p><>To commit, we use the <i><strong>git commit</strong></i> command.</p>
        <p><>There is a <mark>-m</mark> flag that allows us to pass a commit message directly without having to open a text editor.</p>
        <p><><mark>git commit -m "MESSAGE"</mark>, Replace MESSAGE with a short descriptive commit message of your choosing.</p>
+       <figure>
+        <img src="./images/initial commit.png" alt="Initial commit">
+        <figcaption>The initial commit of the project using <i><strong>git commit -m "MESSAGE"</strong></i> command</figcaption>
+       </figure>
+
+       <h3><i><u>How to view past commits</u></i></h3>
+       <p><>To view past commits, we use the command: <mark>git log</mark></p>
+       <figure>
+        <img src="./images/past commit.png" alt="Past commit" height="150px">
+        <figcaption>Viewing past commits using <i><b>git log</b></i> command.</figcaption>
+       </figure>
+
+       <p><>To view past commits in a summarized format, we pass the flag --oneline to the git log command; <mark>git log --oneline</mark></p>
+       <figure>
+        <img src="./images/past commit summarized.png" alt="Past commit summarized">
+        <figcaption>Viewing past commits using <i><b>git log --oneline</b></i> command.</figcaption>
+       </figure>
+
+       <h3><i><u>How to go back to a particular commit</u></i></h3>
+       <p><>To look around or test something in a previous commit, we use the command: <mark>git checkout [commit-hash]</mark></p>
+       <p><>To find a commit hash, we use the command explained earlier <i><b>git log</b></i>, then copy the first few characters of the commit hash to use in your command.</p>
+
+       <!-- Explains the definition of Branch -->
+        <h2>8. Branches</h2>
+        <p><>A <strong>branch</strong> in Git is like a separate line of development that allows you to work on different versions of a project independently.</p>
+        <p><>Think of it as a workspace where you can make changes, test new features, or fix bugs without affecting the main version of your code.</p>
+        <p>Importance of Branches:
+            <ul>
+                <li><strong>Safe experimentation:</strong> You can try out new ideas without breaking the main codebase.</li>
+                <li><strong>Parallel development:</strong> Multiple team members can work on different features simultaneously.</li>
+                <li><strong>Better organization:</strong> You can manage tasks or features branches before combining them.</li>
+            </ul>
+        </p>
+        <p><i><u><b>The master branch</b></u></i></p>
+        <p><>This is the default git branch.</p>
+        <p><>It doesn't do anything special or have any fancy powers, it's just like any other branches.</p>
+        <p><i><u><b>What is HEAD?</b></u></i></p>
+        <P><>While working with git, often times you will come across something like (HEAD -> master).</P>
+        <P><><strong>HEAD</strong> is simply a pointer that refers to the current "location" in your repository.</P>
+        <p><>At any given time in git, only one branch can be active. HEAD points to this branch.</p>
+
+        <!-- Explains the steps of creating a branch -->
+         <h2>9. Creating a branch</h2>
+         <p><>To create a branch, we use the command: <mark>git branch BRANCH_NAME</mark></p>
+         <p><>Replace BRANCH_NAME with your preferred branch name, for example, if we want to create a branch called production: <i><b>git branch production</b></i></p>
+         <figure>
+            <img src="./images/branch creation.png" alt="Creating a branch">
+            <figcaption>Creating a branch named production using <i>git branch BRANCH_NAME</i> command.</figcaption>
+         </figure>
+
+         <!-- Explains how to view all branches that have been created -->
+          <h2>10. Viewing all branches</h2>
+          <p><>Use the command <i><strong>git branch</strong></i> to view your existing branches.</p>
+          <p><>The active branch will have a little asterisk symbol (*) beside it and in some command line interfaces will be green in color.</p>
+          <figure>
+            <img src="./images/branch view.png" alt="Viewing branches">
+            <figcaption>Viewing all the branches that were created using <i><strong>git branch</strong></i> command.</figcaption>
+          </figure>
+
+          <!-- Explains how to switch active branches -->
+           <h2>11. Switching active branches</h2>
+           <p><strong>Note:</strong> It is always important to stage and commit changes before switching branches.</p>
+           <p><>Switching branches means changing the active branch.</p>
+           <p><>To switch branches, we use the command: <mark>git switch BRANCH_NAME</mark></p>
+           <p><>Replace BRANCH_NAME with the name of the branch, for example, if we want to make production the active branch (switching to it): <i><b>git switch production</b></i></p>
+           <figure>
+            <img src="./images/branch switch.png" alt="Switching to a differnt branch ">
+            <figcaption>Switching to a banch named production using <i><strong>git switch production</strong></i> command and confirming using <i><strong>git branch</strong></i> command.</figcaption>
+           </figure>
+
+           <!-- Explains how to merge a branch -->
+            <h2>12. Merging a branch</h2>
+
 
 </body>
 </html>

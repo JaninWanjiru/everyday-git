@@ -238,7 +238,40 @@
 
            <!-- Explains how to merge a branch -->
             <h2>12. Merging a branch</h2>
-            <p></p>
+            <p><>Almost all the times, we want to incorporate things we've done in our branch/branches into another branch (destination branch).</p>
+            <p><>To merge branches:
+                <ul>
+                    <li>First, we switch to the branch where we want to merge the current branch.</li>
+                    <li>Then we use the command: <mark>git merge BRANCH_NAME</mark></li>
+                    *where BRANCH_NAME is the name of the branch we want to merge to the current active branch.
+                </ul>
+            </p>
+            <p><>Assuming our official branch is called 'master' and we have content in a branch called 'production' that we want to merge into master:
+                <ul>
+                    <li>We start by switching to the master branch where we want to merge the changes from 'production': <i><strong>git switch master</strong></i></li>
+                    <li>We then use the <i><strong>git merge</strong></i> to merge the content from production to master: <i><strong>git merge production</strong></i></li>
+                </ul>
+            </p>
+            <h3><i><u>Merge conflicts</u></i></h3>
+            <p><>Merge conflicts occur when, during merging, git is unable to reconcile differences between two branches.</p>
+            <p>When Merge Conflicts occur:
+                <ul>
+                    <li><strong>Concurrent changes</strong> - if two branches have changes to the same lines of a file, Git can't decide which change to keep.</li>
+                    <li><strong>Conflicting edits</strong> - if one branch edits a file that the other branch deletes, Git can't automatically resolve the conflict.</li>
+                    <li><strong>Diverged Histories</strong> - if the histories of the branches have diverged significantly, merge conflicts are more likely to occur.</li>
+                </ul>
+            </p>
+            <h3><i><u>How to fix merge conflicts</u></i></h3>
+            <p>
+                <ul>
+                    <li>Open up the file(s) with merge conflicts.</li>
+                    <li>Edit the file(s) to remove the conflicts. Decide which branch's content you want to keep in each conflict or keep the content from both.</li>
+                    <li>Remove the conflict markers in the document.</li>
+                    <li>Add your changes and then make a commit.</li>
+                </ul>
+            </p>
+
+
 
 
 </body>
